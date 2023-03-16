@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/scheduleImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"
+        android:src="@color/teal_200"
+        android:contentDescription="Schedule image provided by imageUrl">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/scheduleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/scheduleImage"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_goneMarginTop="@dimen/margin_medium"
+        android:textSize="20sp"
+        android:text="Schedule title"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/scheduleSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/scheduleImage"
+        app:layout_constraintTop_toBottomOf="@id/scheduleTitle"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_goneMarginTop="@dimen/margin_small"
+        android:textSize="20sp"
+        android:text="Schedule subtitle"
+        android:layout_marginTop="@dimen/margin_medium" />
+
+    <TextView
+        android:id="@+id/scheduleDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/scheduleImage"
+        app:layout_constraintBottom_toBottomOf="@id/scheduleImage"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:textSize="20sp"
+        android:text="Schedule Date"
+        android:layout_marginTop="5dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
